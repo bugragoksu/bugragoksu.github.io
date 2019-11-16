@@ -1,450 +1,758 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<!-- For IE -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- For Resposive Device -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- For Window Tab Color -->
+		<!-- Chrome, Firefox OS and Opera -->
+		<meta name="theme-color" content="#061948">
+		<!-- Windows Phone -->
+		<meta name="msapplication-navbutton-color" content="#061948">
+		<!-- iOS Safari -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="#061948">
+		<title>Charles-Business-Consulting HTML Template</title>
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" sizes="56x56" href="images/fav-icon/icon.png">
+		<!-- Main style sheet -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!-- responsive style sheet -->
+		<link rel="stylesheet" type="text/css" href="css/responsive.css">
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Fix Internet Explorer ______________________________________-->
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="vendor/html5shiv.js"></script>
+			<script src="vendor/respond.js"></script>
+		<![endif]-->	
+	</head>
 
-    <!-- awesone fonts css-->
-    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- owl carousel css-->
-    <link rel="stylesheet" href="owl-carousel/assets/owl.carousel.min.css" type="text/css">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <title>Pozcu YÖS</title>
-    <style>
+	<body>
+		<div class="main-page-wrapper">
 
-    </style>
-</head>
+			<!-- ===================================================
+				Loading Transition
+			==================================================== -->
+			<div id="loader-wrapper">
+				<div id="loader"></div>
+			</div>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light bg-transparent" id="gtco-main-nav">
-        <div class="container"><a class="navbar-brand">Pozcu yös</a>
-            <button class="navbar-toggler" data-target="#my-nav" onclick="myFunction(this)" data-toggle="collapse"><span
-                    class="bar1"></span> <span class="bar2"></span> <span class="bar3"></span></button>
-            <div id="my-nav" class="collapse navbar-collapse">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" id="services" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" id="about" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" id="news" href="#news">News</a></li>
-                    <li class="nav-item"><a class="nav-link" id="contact" href="#contact">Contact</a></li>
-                </ul>
-                <ul class="navbar-nav mr-auto">
-                <li class="nav-item"> <a  class="nav-link" lang="en-US" hreflang="en-US" href="#"><img style="width: 20px;"
-                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAHzSURBVHjaYkxOP8IAB//+Mfz7w8Dwi4HhP5CcJb/n/7evb16/APL/gRFQDiAAw3JuAgAIBEDQ/iswEERjGzBQLEru97ll0g0+3HvqMn1SpqlqGsZMsZsIe0SICA5gt5a/AGIEarCPtFh+6N/ffwxA9OvP/7//QYwff/6fZahmePeB4dNHhi+fGb59Y4zyvHHmCEAAAW3YDzQYaJJ93a+vX79aVf58//69fvEPlpIfnz59+vDhw7t37968efP3b/SXL59OnjwIEEAsDP+YgY53b2b89++/awvLn98MDi2cVxl+/vl6mituCtBghi9f/v/48e/XL86krj9XzwEEEENy8g6gu22rfn78+NGs5Ofr16+ZC58+fvyYwX8rxOxXr169fPny+fPn1//93bJlBUAAsQADZMEBxj9/GBxb2P/9+S/R8u3vzxuyaX8ZHv3j8/YGms3w8ycQARmi2eE37t4ACCDGR4/uSkrKAS35B3TT////wADOgLOBIaXIyjBlwxKAAGKRXjCB0SOEaeu+/y9fMnz4AHQxCP348R/o+l+//sMZQBNLEvif3AcIIMZbty7Ly6t9ZmXl+fXj/38GoHH/UcGfP79//BBiYHjy9+8/oUkNAAHEwt1V/vI/KBY/QSISFqM/GBg+MzB8A6PfYC5EFiDAABqgW776MP0rAAAAAElFTkSuQmCC"
-                            title="English" alt="English"></a>
-                </li>
-                <li class="nav-item"> <a class="nav-link" lang="es-ES" hreflang="es-ES" href="#"><img style="width: 20px;"
-                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAFnSURBVHjaYvzPgAD/UNlYEUAAmuTYAAAQhAEYqF/zFbe50RZ1cMmS9TLi0pJLRjZohAMTGFUN9HdnHgEE1sDw//+Tp0ClINW/f0NIKPoFJH/9//ULyGaUlQXaABBALAx/Gf4zAt31F4i+ffj3/cN/XrFfzOx//v///f//LzACM/79ZmD8/e8TA0AAMYHdDVT958vXP38nMDB0s3x94/Tj5y+YahhiAKLfQKUAAcQEdtJfoDHMF2L+vPzDmFXLelf551tGFOOhev4A/QgQQExgHwAd8IdFT/Wz6j+GhlpmXSOW/2z///8Eq/sJ18Dw/zdQA0AAMQExxJjjdy9x2/76EfLz4MXdP/i+wsyGkkA3Aw3984cBIIAYfzIwMKel/bt3jwEaLNAwgZIQxp/fDH/+MqqovL14ESCAWICeZvr9h0FSEhSgwBgAygFDEMT+wwAhgQgc4kAEVAwQQIxfUSMSTxxDAECAAQAJWke8v4u1tAAAAABJRU5ErkJggg=="
-                            title="Español" alt="Español"></a>
-                </li>
-                <li class="nav-item">
-                    <a  class="nav-link" lang="fr-FR" hreflang="fr-FR" href="#"><img style="width: 20px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAGzSURBVHjaYiyeepkBBv79+Zfnx/f379+fP38CyT9//jAyMiq5GP77wvDnJ8MfoAIGBoAAYgGqC7STApL///3/9++/pCTv////Qdz/QO4/IMna0vf/z+9/v379//37bUUTQACBNDD8Z/j87fffvyAVX79+/Q8GQDbQeKA9fM+e/Pv18/+vnwzCIkBLAAKQOAY5AIAwCEv4/4PddNUm3ji0QJyxW3rgzE0iLfqDGr2oYuu0l54AYvnz5x9Q6d+/QPQfyAQqAin9B3EOyG1A1UDj//36zfjr1y8GBoAAFI9BDgAwCMIw+P8Ho3GDO6XQ0l4MN8b2kUwYaLszqgKM/KHcDXwBxAJUD3TJ779A8h9Q5D8SAHoARP36+Rfo41+/mcA2AAQQy49ff0Cu//MPpAeI/0FdA1QNYYNVA/3wmwEYVgwMAAHE8uPHH5BqoD1//gJJLADoJKDS378Z//wFhhJAALF8A3rizz8uTmYg788fJkj4QOKREQyYxSWBhjEC/fcXZANAALF8+/anbcHlHz9+ffvx58uPX9KckkCn/gby/wLd8uvHjx96k+cD1UGiGQgAAgwA7q17ZpsMdUQAAAAASUVORK5CYII=" title="Français" alt="Français"></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" lang="tr-TR" hreflang="tr-TR" href="#"><img style="width: 20px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAF+SURBVHjaYvzPgAD/UNlYEUAAmuTYBgAYhIEgJJmboZgtHbaJKNK8TvozM8LIllwagEY4sIFV1UD/3swngMAaGBn/P3kCVApS7ebG8O/f/x07/n/6BFL36/f/37/+//oFZDPKygJtAAggkIb/YINBqqOjGUxNQeqUlf93dIDV/QLpAWtg+P0bqAEggJhA7gaqBtqoqMjg5PR/+vT/SUn/N2z4//Xr/+XL//Pwgu2BWgJUCxBATCAn/fgJEnVx/Q+05NgxkNzp0/9XrPgvJPR/zZr/ZmZQDX/+AE0HCCCQhv9//4D89OQxMMT+a2uDnKGm9v/SJZCrHj36v28fRAPESQABxALEjGBLGRYv/s/H97+oCOQYIIiM/P/ly/9Fi6CO+QMy9A8DA0AAgTQwg4MMaMD/rq7/vr7/WVlBrv/8GeROiAf+ADWAQgXoHIAAAmlg+v+fQVISbMxfhpMngToZhYUZ+PkZwAaDEDgMgQioGCCAGL+iRiSeOIYAgAADAO/XO1xGA79vAAAAAElFTkSuQmCC" title="Türkçe" alt="Türkçe"></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" lang="ar" hreflang="ar" href="#"><img style="width: 20px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAAPwAAAD8BR5eJ4AAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAEOSURBVCiRpZHNSsNQEEbPTXOtoc1NmyhFK6ioCLXioq4UdOtz+Ia+g+7cFQURhYClikRtqGkTm8SFbkrSWHC23w9nZgTnnZR/jFYkiiRFJMX9+izBSRbZ6ks0BPcrEZ42np+g7SuOqiFi/xUOXji1Qtq+mo/ACSW2GvJsN9DkElEy4UH2qdeGOCOJV/4qJmhqJgsqpLNzzHLFpqEcTlpnKCugqZl/E/SiAU5osWkZGHINfxSwrgS3I4teNAA57ReZN6Zw+GlTW/XY3t0A4PHO5e2pzrX5DmK6IHtEAV3jAzXew70UuFeC6rhFtzLIhHNXAAhLCRfBDaXyjxwHE2I9Jz2rACDWBTHxrys/DPAN4YpPXyWy3BoAAAAASUVORK5CYII=" title="العربية" alt="العربية"></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" lang="fa-IR" hreflang="fa-IR" href="#"><img style="width: 20px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAIAAAD5gJpuAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAGSSURBVHjaYmSYyMDwgwEK/jEw/IGRyOgXjGRhAAggFoYvDNWu1SDFQMDw7++/v3/+/f37/8+ffxD0+/ffP3/+g8jff39vmrEJIIBYgJoYGRiffH367/9fuKI////++vv7z9/fv/79Aqr79RdI/pLllWNgYgAIADEAzv8Et1q3EgYSEAYQ5PXkGgoa4fPhHAsd3/PfHAob4PXiHQkb3vLeHgse2/HbKhEq9Fb0Aojx79+/jIyMQCf9//+fAQz/f//5//Ch///+/7e2/s/B9h8GgMo+ffoEEEBMEN9CxSD0imX/37z+z8byf9GC/8gA7E+AAGJCVw0EMTH/nz79f+LE/8REFPX//wM1AAQQcy07O4OKyv8zZxh+/vp/8eL/nz9BpJ7+fxYWoDxIG1DkxAmG798Zrlz5smsHQAAx/mRgYM7M/HfvHsOvX8DQAyE4A4nNAPSqsvLbc+cAAogFGEtMP34yiImBRP/8Zfjzm+H3b0YQ+w8DhASiv39B6NcvoGKAAGL8Co5ZOGJA5aJJAQFAgAEA8eJIJDc4COoAAAAASUVORK5CYII=" title="فارسی" alt="فارسی"></a>
-                </li>
-            </ul>
-            </div>
-        </div>
-    </nav>
-    <div class="container-fluid gtco-banner-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h1> Lorem ipsum dolor sit amet,<span>consectetur </span> adipiscing elit. </h1>
-                    <p> Güzel bir başlangıç için ilk adımınız</p>
-                    <a href="#">Başvuru Yap <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                </div>
-                <div class="col-md-6">
-                    <div class="card"><img class="card-img-top img-fluid" src="images/banner-img.png" alt=""></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid gtco-feature" id="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-7">
-                    <div class="cover">
-                        <div class="card">
-                            <svg class="back-bg" width="100%" viewBox="0 0 900 700"
-                                style="position:absolute; z-index: -1">
-                                <defs>
-                                    <linearGradient id="PSgrad_01" x1="64.279%" x2="0%" y1="76.604%" y2="0%">
-                                        <stop offset="0%" stop-color="rgb(1,230,248)" stop-opacity="1" />
-                                        <stop offset="100%" stop-color="rgb(29,62,222)" stop-opacity="1" />
-                                    </linearGradient>
-                                </defs>
-                                <path fill-rule="evenodd" opacity="0.102" fill="url(#PSgrad_01)"
-                                    d="M616.656,2.494 L89.351,98.948 C19.867,111.658 -16.508,176.639 7.408,240.130 L122.755,546.348 C141.761,596.806 203.597,623.407 259.843,609.597 L697.535,502.126 C748.221,489.680 783.967,441.432 777.751,392.742 L739.837,95.775 C732.096,35.145 677.715,-8.675 616.656,2.494 Z" />
-                            </svg>
-                            <!-- *************-->
+			
 
-                            <svg width="100%" viewBox="0 0 700 500">
-                                <clipPath id="clip-path">
-                                    <path
-                                        d="M89.479,0.180 L512.635,25.932 C568.395,29.326 603.115,76.927 590.357,129.078 L528.827,380.603 C518.688,422.048 472.661,448.814 427.190,443.300 L73.350,400.391 C32.374,395.422 -0.267,360.907 -0.002,322.064 L1.609,85.154 C1.938,36.786 40.481,-2.801 89.479,0.180 Z">
-                                    </path>
-                                </clipPath>
-                                <!-- xlink:href for modern browsers, src for IE8- -->
-                                <image clip-path="url(#clip-path)" xlink:href="images/learn-img.jpg" width="100%"
-                                    height="465" class="svg__image"></image>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-5" id="servicesBody">
-                    <h2> Lorem ipsum dolor sit amet</h2>
-                    <p> Temelleri 2002 yılına dayanan <strong>POZCUYÖS EDUCATION CENTER</strong> başarılı geçmişiyle
-                        Türkiye’nin önde gelen Eğitim danışmanlık firmaları arasında yer almakta ve Eğitim danışmanlık
-                        sektöründe bölgesel lider olma vizyonuyla hareket etmektedir</p>
-                    <p>
-                        <small><strong>POZCUYÖS EDUCATION CENTER</strong> olarak, verilen eğitim hizmetinin
-                            ciddiyetinden ödün vermeden, misafir öğrencilerimizin ülkemizin kültürel zenginliklerini de
-                            deneyimlemelerini sağlamak amaçlarımız arasındadır.
-                        </small>
-                    </p>
-                    <a href="#">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid gtco-features" id="aboutBody">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <h2> Services</h2>
-                    <p> Nunc sodales lobortis arcu, sit amet venenatis erat placerat a. Donec lacinia magna nulla,
-                        cursus
-                        impediet augue egestas id. Suspendisse dolor lectus, pellentesque quis tincidunt ac, dictum id
-                        neque. </p>
-                    <a href="#">All Services <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                </div>
-                <div class="col-lg-8">
-                    <svg id="bg-services" width="100%" viewBox="0 0 1000 800">
-                        <defs>
-                            <linearGradient id="PSgrad_02" x1="64.279%" x2="0%" y1="76.604%" y2="0%">
-                                <stop offset="0%" stop-color="rgb(1,230,248)" stop-opacity="1" />
-                                <stop offset="100%" stop-color="rgb(29,62,222)" stop-opacity="1" />
-                            </linearGradient>
-                        </defs>
-                        <path fill-rule="evenodd" opacity="0.102" fill="url(#PSgrad_02)"
-                            d="M801.878,3.146 L116.381,128.537 C26.052,145.060 -21.235,229.535 9.856,312.073 L159.806,710.157 C184.515,775.753 264.901,810.334 338.020,792.380 L907.021,652.668 C972.912,636.489 1019.383,573.766 1011.301,510.470 L962.013,124.412 C951.950,45.594 881.254,-11.373 801.878,3.146 Z" />
-                    </svg>
-                    <div class="row">
-                        <div class="col">
-                            <div class="card text-center">
-                                <div class="oval"><img class="card-img-top" src="images/web-design.png" alt=""></div>
-                                <div class="card-body">
-                                    <h3 class="card-title">Lorem Ipsum</h3>
-                                    <p class="card-text">Nullam quis libero in lorem accumsan sodales. Nam vel nisi
-                                        eget.</p>
-                                </div>
-                            </div>
-                            <div class="card text-center">
-                                <div class="oval"><img class="card-img-top" src="images/marketing.png" alt=""></div>
-                                <div class="card-body">
-                                    <h3 class="card-title">Lorem Ipsum</h3>
-                                    <p class="card-text">Nullam quis libero in lorem accumsan sodales. Nam vel nisi
-                                        eget.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card text-center">
-                                <div class="oval"><img class="card-img-top" src="images/seo.png" alt=""></div>
-                                <div class="card-body">
-                                    <h3 class="card-title">Lorem Ipsum</h3>
-                                    <p class="card-text">Nullam quis libero in lorem accumsan sodales. Nam vel nisi
-                                        eget.</p>
-                                </div>
-                            </div>
-                            <div class="card text-center">
-                                <div class="oval"><img class="card-img-top" src="images/graphics-design.png" alt="">
-                                </div>
-                                <div class="card-body">
-                                    <h3 class="card-title">Lorem Ipsum</h3>
-                                    <p class="card-text">Nullam quis libero in lorem accumsan sodales. Nam vel nisi
-                                        eget.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+			<!-- 
+			=============================================
+				Theme Header Two
+			============================================== 
+			-->
+			<header class="header-two">
+				<div class="top-header">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6 col-sm-8 col-12">
+								<ul class="left-widget">
+									<li>We are leading consultant firm!</li>
+									<li>
+										<div id="polyglotLanguageSwitcher">
+											<form action="#">
+												<select id="polyglot-language-options">
+													<option id="en" value="en" selected>English</option>
+													<option id="fr" value="fr">French</option>
+													<option id="de" value="de">German</option>
+													<option id="it" value="it">Italian</option>
+													<option id="es" value="es">Spanish</option>
+												</select>
+											</form>
+										</div> <!-- End #polyglotLanguageSwitcher -->
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-6 col-sm-4 col-12">
+								<ul class="social-icon">
+									<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+								</ul>
+							</div>
+						</div> <!-- /.row -->
+					</div> <!-- /.container -->
+				</div> <!-- /.top-header -->
 
-    <div class="container-fluid gtco-testimonials">
-        <div class="container">
-            <h2>What our customers say about us.</h2>
-            <div class="owl-carousel owl-carousel1 owl-theme">
-                <div>
-                    <div class="card text-center"><img class="card-img-top" src="images/customer1.jpg" alt="">
-                        <div class="card-body">
-                            <h5>Lisa Gally <br />
-                                <span> Project Manager </span></h5>
-                            <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-                                impedit quo minus id quod maxime placeat ” </p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="card text-center"><img class="card-img-top" src="images/customer2.jpg" alt="">
-                        <div class="card-body">
-                            <h5>Missy Limana<br />
-                                <span> Project Manager </span></h5>
-                            <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-                                impedit quo minus id quod maxime placeat ” </p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="card text-center"><img class="card-img-top" src="images/customer3.jpg" alt="">
-                        <div class="card-body">
-                            <h5>Aana Brown<br />
-                                <span> Project Manager </span></h5>
-                            <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-                                impedit quo minus id quod maxime placeat ” </p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="card text-center"><img class="card-img-top" src="images/customer3.jpg" alt="">
-                        <div class="card-body">
-                            <h5>Aana Brown<br />
-                                <span> Project Manager </span></h5>
-                            <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-                                impedit quo minus id quod maxime placeat ” </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid gtco-features-list">
-        <div class="container">
-            <div class="row">
-                <div class="media col-md-6 col-lg-4">
-                    <div class="oval mr-4"><img class="align-self-start" src="images/quality-results.png" alt=""></div>
-                    <div class="media-body">
-                        <h5 class="mb-0">Lorem Ipsum</h5>
-                        Aliquam a nisl pulvinar, hendrerit arcu sed, dapibus velit. Duis ac quam id sapien vestibulum
-                        fermentum ac eu eros. Aliquam erat volutpat.
-                    </div>
-                </div>
-                <div class="media col-md-6 col-lg-4">
-                    <div class="oval mr-4"><img class="align-self-start" src="images/analytics.png" alt=""></div>
-                    <div class="media-body">
-                        <h5 class="mb-0">Lorem Ipsum</h5>
-                        Aliquam a nisl pulvinar, hendrerit arcu sed, dapibus velit. Duis ac quam id sapien vestibulum
-                        fermentum ac eu eros. Aliquam erat volutpat.
-                    </div>
-                </div>
-                <div class="media col-md-6 col-lg-4">
-                    <div class="oval mr-4"><img class="align-self-start" src="images/affordable-pricing.png" alt="">
-                    </div>
-                    <div class="media-body">
-                        <h5 class="mb-0">Lorem Ipsum</h5>
-                        Aliquam a nisl pulvinar, hendrerit arcu sed, dapibus velit. Duis ac quam id sapien vestibulum
-                        fermentum ac eu eros. Aliquam erat volutpat.
-                    </div>
-                </div>
-                <div class="media col-md-6 col-lg-4">
-                    <div class="oval mr-4"><img class="align-self-start" src="images/easy-to-use.png" alt=""></div>
-                    <div class="media-body">
-                        <h5 class="mb-0">Lorem Ipsum</h5>
-                        Aliquam a nisl pulvinar, hendrerit arcu sed, dapibus velit. Duis ac quam id sapien vestibulum
-                        fermentum ac eu eros. Aliquam erat volutpat.
-                    </div>
-                </div>
-                <div class="media col-md-6 col-lg-4">
-                    <div class="oval mr-4"><img class="align-self-start" src="images/free-support.png" alt=""></div>
-                    <div class="media-body">
-                        <h5 class="mb-0">Lorem Ipsum</h5>
-                        Aliquam a nisl pulvinar, hendrerit arcu sed, dapibus velit. Duis ac quam id sapien vestibulum
-                        fermentum ac eu eros. Aliquam erat volutpat.
-                    </div>
-                </div>
-                <div class="media col-md-6 col-lg-4">
-                    <div class="oval mr-4"><img class="align-self-start" src="images/effectively-increase.png" alt="">
-                    </div>
-                    <div class="media-body">
-                        <h5 class="mb-0">Lorem Ipsum</h5>
-                        Aliquam a nisl pulvinar, hendrerit arcu sed, dapibus velit. Duis ac quam id sapien vestibulum
-                        fermentum ac eu eros. Aliquam erat volutpat.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+				<div class="theme-menu-wrapper">
+					<div class="container">
+						<div class="bg-wrapper clearfix">
+							<div class="logo float-left"><a href="index.html"><img src="images/logo/place.png" alt=""></a></div>
+							<!-- ============== Menu Warpper ================ -->
+					   		<div class="menu-wrapper float-left">
+					   			<nav id="mega-menu-holder" class="clearfix">
+								   <ul class="clearfix">
+									    <li class="active"><a href="#">Home</a>
+									    	<ul class="dropdown">
+									        	<li><a href="index.html">Home version one</a></li>
+									        	<li><a href="index-2.html">Home version two</a></li>
+									      </ul>
+									    </li>
+									    <li><a href="#">PAGES</a>
+									    	<ul class="dropdown">
+									    		<li><a href="about.html">About us</a></li>
+									    		<li><a href="team.html">Our team</a></li>
+									    		<li><a href="faq.html">Faq's</a></li>
+									    		<li><a href="404.html">404</a></li>
+									    		<li><a href="shop.html">Shop</a></li>
+									    		<li><a href="shop-details.html">Shop details</a></li>
+									            <li><a href="#">Third Level menu</a>
+									    			<ul>
+									    				<li><a href="#">Demo one</a></li>
+									    				<li><a href="#">Demo two</a></li>
+									    			</ul>
+									    		</li>
+									       </ul>
+									    </li>
+									    <li><a href="#">Service</a>
+									    	<ul class="dropdown">
+									        	<li><a href="service.html">Service Version one</a></li>
+									        	<li><a href="service-v2.html">Service version two</a></li>
+									        	<li><a href="service-details.html">Service Details</a></li>
+									       </ul>
+									    </li>
+									    <li><a href="#">Portfolio</a>
+									    	<ul class="dropdown">
+									        	<li><a href="project.html">project</a></li>
+									        	<li><a href="project-details.html">Project details</a></li>
+									       </ul>
+									    </li>
+									    <li><a href="#">Blog</a>
+									    	<ul class="dropdown">
+									        	<li><a href="blog.html">Blog List</a></li>
+									        	<li><a href="blog-grid.html">Blog Grid</a></li>
+									        	<li><a href="blog-details.html">Blog details</a></li>
+									       </ul>
+									    </li>
+									    <li><a href="contact.html">contact</a></li>
+								   </ul>
+								</nav> <!-- /#mega-menu-holder -->
+					   		</div> <!-- /.menu-wrapper -->
+					   		<div class="right-widget float-right">
+					   			<ul>
+					   				
+					   				<li class="search-option">
+					   					<div class="dropdown">
+					   						<button type="button" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-search" aria-hidden="true"></i></button>
+											<form action="#" class="dropdown-menu">
+												<input type="text" Placeholder="Enter Your Search">
+												<button><i class="fa fa-search"></i></button>
+											</form>
+					   					</div>
+					   				</li>
+					   			</ul>
+					   		</div> <!-- /.right-widget -->
+						</div> <!-- /.bg-wrapper -->
+					</div> <!-- /.container -->
+				</div> <!-- /.theme-menu-wrapper -->
+			</header> <!-- /.header-two -->
 
-    <div class="container-fluid gtco-news" id="newsBody">
-        <div class="container">
-            <h2>Latest News & Articles</h2>
-            <div class="owl-carousel owl-carousel2 owl-theme">
-                <div>
-                    <div class="card text-center"><img class="card-img-top" src="images/news1.jpg" alt="">
-                        <div class="card-body text-left pr-0 pl-0">
-                            <h5>Aenean ultrices lorem quis blandit
-                                tempor urabitur accumsan. </h5>
-                            <p class="card-text">Donec non sem mi. In hac habitasse platea dictumst. Nullam a feugiat
-                                augue,
-                                et porta metus. Nulla mollis lobortis leet. Maecenas tincidunt, arcu sed ornare purus
-                                risus
-                                . . . </p>
-                            <a href="#">READ MORE <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="card text-center"><img class="card-img-top" src="images/news2.jpg" alt="">
-                        <div class="card-body text-left pr-0 pl-0">
-                            <h5> Nam vel nisi eget odio pulvinar
-                                iaculis. Fusce aliquet. </h5>
-                            <p class="card-text">Donec non sem mi. In hac habitasse platea dictumst. Nullam a feugiat
-                                augue,
-                                et porta metus. Nulla mollis lobortis leet. Maecenas tincidunt, arcu sed ornare purus
-                                risus
-                                . . . </p>
-                            <a href="#">READ MORE <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="card text-center"><img class="card-img-top" src="images/news3.jpg" alt="">
-                        <div class="card-body text-left pr-0 pl-0">
-                            <h5>Morbi faucibus odio sollicitudin
-                                risus scelerisque dignissim. </h5>
-                            <p class="card-text">Donec non sem mi. In hac habitasse platea dictumst. Nullam a feugiat
-                                augue,
-                                et porta metus. Nulla mollis lobortis leet. Maecenas tincidunt, arcu sed ornare purus
-                                risus
-                                . . . </p>
-                            <a href="#">READ MORE <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="card text-center"><img class="card-img-top" src="images/news1.jpg" alt="">
-                        <div class="card-body text-left pr-0 pl-0">
-                            <h5>Aenean ultrices lorem quis blandit
-                                tempor urabitur accumsan. </h5>
-                            <p class="card-text">Donec non sem mi. In hac habitasse platea dictumst. Nullam a feugiat
-                                augue,
-                                et porta metus. Nulla mollis lobortis leet. Maecenas tincidunt, arcu sed ornare purus
-                                risus
-                                . . . </p>
-                            <a href="#">READ MORE <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="card text-center"><img class="card-img-top" src="images/news2.jpg" alt="">
-                        <div class="card-body text-left pr-0 pl-0">
-                            <h5> Nam vel nisi eget odio pulvinar
-                                iaculis. Fusce aliquet. </h5>
-                            <p class="card-text">Donec non sem mi. In hac habitasse platea dictumst. Nullam a feugiat
-                                augue,
-                                et porta metus. Nulla mollis lobortis leet. Maecenas tincidunt, arcu sed ornare purus
-                                risus
-                                . . . </p>
-                            <a href="#">READ MORE <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="card text-center"><img class="card-img-top" src="images/news3.jpg" alt="">
-                        <div class="card-body text-left pr-0 pl-0">
-                            <h5>Morbi faucibus odio sollicitudin
-                                risus scelerisque dignissim. </h5>
-                            <p class="card-text">Donec non sem mi. In hac habitasse platea dictumst. Nullam a feugiat
-                                augue,
-                                et porta metus. Nulla mollis lobortis leet. Maecenas tincidunt, arcu sed ornare purus
-                                risus
-                                . . . </p>
-                            <a href="#">READ MORE <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <footer class="container-fluid" id="gtco-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6" id="contactBody">
-                    <h4> Contact Us </h4>
-                    <input type="text" class="form-control" placeholder="Full Name">
-                    <input type="email" class="form-control" placeholder="Email Address">
-                    <textarea class="form-control" placeholder="Message"></textarea>
-                    <a href="#" class="submit-button">SEND<i class="fa fa-angle-right" aria-hidden="true"></i></a>
-                </div>
-                <div class="col-lg-6">
-                    <div class="row">
-                        <div class="col-6">
-                            <h4>Company</h4>
-                            <ul class="nav flex-column company-nav">
-                                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">News</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">FAQ's</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-                            </ul>
-                            <h4 class="mt-5">Fllow Us</h4>
-                            <ul class="nav follow-us-nav">
-                                <li class="nav-item"><a class="nav-link pl-0" href="#"><i class="fa fa-facebook"
-                                            aria-hidden="true"></i></a></li>
-                                <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-twitter"
-                                            aria-hidden="true"></i></a></li>
-                                <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-google"
-                                            aria-hidden="true"></i></a></li>
-                                <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-linkedin"
-                                            aria-hidden="true"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="col-6">
-                            <h4>Services</h4>
-                            <ul class="nav flex-column services-nav">
-                                <li class="nav-item"><a class="nav-link" href="#">Lorem Ipsum</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">Lorem Ipsum</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">Lorem Ipsum</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">Lorem Ipsum</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">Lorem Ipsum</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">Lorem Ipsum</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-12">
-                            <p>Pozcu YÖS 2019</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+			
+			<!-- 
+			=============================================
+				Theme Main Banner
+			============================================== 
+			-->
+			<div id="theme-main-banner" class="banner-one">
+				<div data-src="images/home/slide-5.jpg">
+					<div class="camera_caption">
+						<div class="container">
+							<p class="wow fadeInUp animated">The government they survive artical of fortune</p>
+							<h1 class="wow fadeInUp animated" data-wow-delay="0.2s">HIGH-QUALITY MARKET <br> EXPERIENCES</h1>
+							<a href="about.html" class="theme-button-one wow fadeInUp animated" data-wow-delay="0.39s">ABOUT US</a>
+						</div> <!-- /.container -->
+					</div> <!-- /.camera_caption -->
+				</div>
+				<div data-src="images/home/slide-3.jpg">
+					<div class="camera_caption">
+						<div class="container">
+							<p class="wow fadeInUp animated">The government they survive artical of fortune</p>
+							<h1 class="wow fadeInUp animated" data-wow-delay="0.2s">HIGH-QUALITY MARKET <br> EXPERIENCES</h1>
+							<a href="about.html" class="theme-button-one wow fadeInUp animated" data-wow-delay="0.39s">ABOUT US</a>
+						</div> <!-- /.container -->
+					</div> <!-- /.camera_caption -->
+				</div>
+				<div data-src="images/home/slide-1.jpg">
+					<div class="camera_caption">
+						<div class="container">
+							<p class="wow fadeInUp animated">The government they survive artical of fortune</p>
+							<h1 class="wow fadeInUp animated" data-wow-delay="0.2s">HIGH-QUALITY MARKET <br> EXPERIENCES</h1>
+							<a href="about.html" class="theme-button-one wow fadeInUp animated" data-wow-delay="0.39s">ABOUT US</a>
+						</div> <!-- /.container -->
+					</div> <!-- /.camera_caption -->
+				</div>
+			</div> <!-- /#theme-main-banner -->
+			
+			
+			<!-- 
+			=============================================
+				CallOut Banner 
+			============================================== 
+			-->
+			<div class="callout-banner section-spacing">
+				<div class="container clearfix">
+					<h3 class="title">Provide solutions for the realiable growth</h3>
+					<p>A tale of a fateful trip that started from this tropic port aboard this tiny ship today still wanted by the government they survive as soldiers of fortune to ever wondered the east side to a deluxe apartment.</p>
+					<a href="#" class="theme-button-one">FREE QUOTES</a>
+				</div>
+			</div> <!-- /.callout-banner -->
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
-    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <!-- owl carousel js-->
-    <script src="owl-carousel/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
-</body>
+			<!-- 
+			=============================================
+				Our Solution
+			============================================== 
+			-->
+			<div class="our-solution section-spacing">
+				<div class="container">
+					<div class="theme-title-one">
+						<h2>Our SOLUTIONS</h2>
+					</div> <!-- /.theme-title-one -->
+					<div class="wrapper">
+						<div class="row">
+							<div class="col-lg-4 col-sm-6 col-12">
+								<div class="single-solution-block">
+									<img src="images/icon/5.png" alt="" class="icon">
+									<h5><a href="service-details.html">Business Services</a></h5>
+									<p>The explore strange new worlds to seek fout new life and new civilizations to boldly where no man has before gone. </p>
+								</div> <!-- /.single-solution-block -->
+							</div> <!-- /.col- -->
+							<div class="col-lg-4 col-sm-6 col-12">
+								<div class="single-solution-block">
+									<img src="images/icon/6.png" alt="" class="icon">
+									<h5><a href="service-details.html">Business Services</a></h5>
+									<p>The explore strange new worlds to seek fout new life and new civilizations to boldly where no man has before gone. </p>
+								</div> <!-- /.single-solution-block -->
+							</div> <!-- /.col- -->
+							<div class="col-lg-4 col-sm-6 col-12">
+								<div class="single-solution-block">
+									<img src="images/icon/7.png" alt="" class="icon">
+									<h5><a href="service-details.html">Business Services</a></h5>
+									<p>The explore strange new worlds to seek fout new life and new civilizations to boldly where no man has before gone. </p>
+								</div> <!-- /.single-solution-block -->
+							</div> <!-- /.col- -->
+							<div class="col-lg-4 col-sm-6 col-12">
+								<div class="single-solution-block">
+									<img src="images/icon/8.png" alt="" class="icon">
+									<h5><a href="service-details.html">Business Services</a></h5>
+									<p>The explore strange new worlds to seek fout new life and new civilizations to boldly where no man has before gone. </p>
+								</div> <!-- /.single-solution-block -->
+							</div> <!-- /.col- -->
+							<div class="col-lg-4 col-sm-6 col-12">
+								<div class="single-solution-block">
+									<img src="images/icon/9.png" alt="" class="icon">
+									<h5><a href="service-details.html">Business Services</a></h5>
+									<p>The explore strange new worlds to seek fout new life and new civilizations to boldly where no man has before gone. </p>
+								</div> <!-- /.single-solution-block -->
+							</div> <!-- /.col- -->
+							<div class="col-lg-4 col-sm-6 col-12">
+								<div class="single-solution-block">
+									<img src="images/icon/10.png" alt="" class="icon">
+									<h5><a href="service-details.html">Business Services</a></h5>
+									<p>The explore strange new worlds to seek fout new life and new civilizations to boldly where no man has before gone. </p>
+								</div> <!-- /.single-solution-block -->
+							</div> <!-- /.col- -->
+						</div> <!-- /.row -->
+					</div> <!-- /.wrapper -->
+				</div> <!-- /.container -->
+			</div> <!-- /.our-solution -->
 
+
+			<!-- 
+			=============================================
+				About Company Stye Two
+			============================================== 
+			-->
+			<div class="about-compnay-two section-spacing">
+				<div class="overlay">
+					<div class="container">
+						<div class="row no-gutters">
+							<div class="col-lg-7 col-12 text">
+								<div class="theme-title-one">
+									<h2>ABOUT US</h2>
+								</div> <!-- /.theme-title-one -->
+								<p>A tale of a fateful trip that started from this tropic port aboard this tiny ship today still wanted by the government they survive as soldiers of fortune to a deluxe you apartment in the sky to explore strange new worlds to seek out new life and new civilizations to boldly go where no man has gone.</p>
+								<p>You would see the biggest gift would be from me and the card attached would so thank you for being a friend the biggest gift.</p>
+								<img src="images/home/sign.png" alt="" class="sign">
+							</div> <!-- /.col- -->
+							<div class="col-lg-5 col-12">
+								<div class="quote-form">
+									<form action="#" class="theme-form-one">
+										<div class="row">
+											<div class="col-md-6"><input type="text" placeholder="Name *"></div>
+											<div class="col-md-6"><input type="text" placeholder="Phone *"></div>
+											<div class="col-md-6"><input type="email" placeholder="Email *"></div>
+											<div class="col-md-6">
+												<select class="form-control" id="exampleSelect1">
+											      <option>Choose Services?</option>
+											      <option>Business Services</option>
+											      <option>Consumer Product</option>
+											      <option>Financial Services</option>
+											      <option>Software Research</option>
+											    </select>
+											</div>
+											<div class="col-12"><textarea placeholder="Message"></textarea></div>
+										</div> <!-- /.row -->
+										<button class="theme-button-one">GET A QUOTES</button>
+									</form>
+								</div> <!-- /.quote-form -->
+							</div>
+						</div> <!-- /.row -->
+					</div> <!-- /.container -->
+				</div> <!-- /.overlay -->
+			</div> <!-- /.about-compnay-two -->
+
+
+			<!-- 
+			=============================================
+				Our Case
+			============================================== 
+			-->
+			<div class="our-case section-spacing">
+				<div class="container">
+					<div class="theme-title-one">
+						<h2>Our CASES</h2>
+						<p>A tale of a fateful trip that started from this tropic port aboard this tiny ship today stillers</p>
+					</div> <!-- /.theme-title-one -->
+					<div class="wrapper">
+						<div class="row">
+							<div class="col-lg-4 col-sm-6 col-12">
+								<div class="single-case-block">
+									<img src="images/portfolio/1.jpg" alt="">
+									<div class="hover-content">
+										<div class="text clearfix">
+											<div class="float-left">
+												<h5><a href="project-details.html">Business Meeting</a></h5>
+												<p>Explore strange new worlds</p>
+											</div>
+											<a href="project-details.html" class="details float-right"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+										</div> <!-- /.text -->
+									</div> <!-- /.hover-content -->
+								</div> <!-- /.single-case-block -->
+							</div> <!-- /.col- -->
+							<div class="col-lg-4 col-sm-6 col-12">
+								<div class="single-case-block">
+									<img src="images/portfolio/2.jpg" alt="">
+									<div class="hover-content">
+										<div class="text clearfix">
+											<div class="float-left">
+												<h5><a href="project-details.html">Business Meeting</a></h5>
+												<p>Explore strange new worlds</p>
+											</div>
+											<a href="project-details.html" class="details float-right"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+										</div> <!-- /.text -->
+									</div> <!-- /.hover-content -->
+								</div> <!-- /.single-case-block -->
+							</div> <!-- /.col- -->
+							<div class="col-lg-4 col-sm-6 col-12">
+								<div class="single-case-block">
+									<img src="images/portfolio/3.jpg" alt="">
+									<div class="hover-content">
+										<div class="text clearfix">
+											<div class="float-left">
+												<h5><a href="project-details.html">Business Meeting</a></h5>
+												<p>Explore strange new worlds</p>
+											</div>
+											<a href="project-details.html" class="details float-right"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+										</div> <!-- /.text -->
+									</div> <!-- /.hover-content -->
+								</div> <!-- /.single-case-block -->
+							</div> <!-- /.col- -->
+							<div class="col-lg-4 col-sm-6 col-12">
+								<div class="single-case-block">
+									<img src="images/portfolio/4.jpg" alt="">
+									<div class="hover-content">
+										<div class="text clearfix">
+											<div class="float-left">
+												<h5><a href="project-details.html">Business Meeting</a></h5>
+												<p>Explore strange new worlds</p>
+											</div>
+											<a href="project-details.html" class="details float-right"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+										</div> <!-- /.text -->
+									</div> <!-- /.hover-content -->
+								</div> <!-- /.single-case-block -->
+							</div> <!-- /.col- -->
+							<div class="col-lg-4 col-sm-6 col-12">
+								<div class="single-case-block">
+									<img src="images/portfolio/5.jpg" alt="">
+									<div class="hover-content">
+										<div class="text clearfix">
+											<div class="float-left">
+												<h5><a href="project-details.html">Business Meeting</a></h5>
+												<p>Explore strange new worlds</p>
+											</div>
+											<a href="project-details.html" class="details float-right"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+										</div> <!-- /.text -->
+									</div> <!-- /.hover-content -->
+								</div> <!-- /.single-case-block -->
+							</div> <!-- /.col- -->
+							<div class="col-lg-4 col-sm-6 col-12">
+								<div class="single-case-block">
+									<img src="images/portfolio/6.jpg" alt="">
+									<div class="hover-content">
+										<div class="text clearfix">
+											<div class="float-left">
+												<h5><a href="project-details.html">Business Meeting</a></h5>
+												<p>Explore strange new worlds</p>
+											</div>
+											<a href="project-details.html" class="details float-right"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+										</div> <!-- /.text -->
+									</div> <!-- /.hover-content -->
+								</div> <!-- /.single-case-block -->
+							</div> <!-- /.col- -->
+						</div> <!-- /.row -->
+					</div> <!-- /.wrapper -->
+					<div class="view-all"><a href="project.html" class="theme-button-one">VIEW ALL</a></div>
+				</div> <!-- /.container -->
+			</div> <!-- /.our-case -->
+
+
+			<!--
+			=====================================================
+				Faq Section
+			=====================================================
+			-->
+			<div class="faq-section">
+				<div class="overlay">
+					<div class="container">
+						<div class="theme-title-one">
+							<h2>Faq’s</h2>
+							<p>A tale of a fateful trip that started from this tropic port aboard this tiny ship today stillers</p>
+						</div> <!-- /.theme-title-one -->
+
+						<div class="wrapper row no-gutters">
+							<div class="col-xl-6 col-lg-7 order-last">
+								<div class="faq-content">
+									<div class="accordion-one">
+										<div class="panel-group theme-accordion" id="accordion">
+										  <div class="panel">
+										    <div class="panel-heading">
+										      <h6 class="panel-title">
+										        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+										        1. What industries do you specialize in?</a>
+										      </h6>
+										    </div>
+										    <div id="collapse1" class="panel-collapse collapse">
+										      <div class="panel-body">
+										      	<p>A tale of a fateful trip that started from this tropic port aboard this tiny ship today still wanted by the government they survive as soldiers of fortune to a deluxe you apartment.</p>
+										      </div>
+										    </div>
+										  </div> <!-- /panel 1 -->
+										  <div class="panel">
+										    <div class="panel-heading active-panel">
+										      <h6 class="panel-title">
+										        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+										        2. You guarantee that our plan will raise capital?</a>
+										      </h6>
+										    </div>
+										    <div id="collapse2" class="panel-collapse collapse show">
+										      <div class="panel-body">
+										      	<p>A tale of a fateful trip that started from this tropic port aboard this tiny ship today still wanted by the government they survive as soldiers of fortune to a deluxe you apartment.</p>
+										      </div>
+										    </div>
+										  </div> <!-- /panel 2 -->
+										  <div class="panel">
+										    <div class="panel-heading">
+										      <h6 class="panel-title">
+										        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+										        3. Do you ever invest in your clients?</a>
+										      </h6>
+										    </div>
+										    <div id="collapse3" class="panel-collapse collapse">
+										      <div class="panel-body">
+										      	<p>A tale of a fateful trip that started from this tropic port aboard this tiny ship today still wanted by the government they survive as soldiers of fortune to a deluxe you apartment.</p>
+										      </div>
+										    </div>
+										  </div> <!-- /panel 3 -->
+										  <div class="panel">
+										    <div class="panel-heading">
+										      <h6 class="panel-title">
+										        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+										       4. What makes your financial projections special?</a>
+										      </h6>
+										    </div>
+										    <div id="collapse4" class="panel-collapse collapse">
+										      <div class="panel-body">
+										      	<p>A tale of a fateful trip that started from this tropic port aboard this tiny ship today still wanted by the government they survive as soldiers of fortune to a deluxe you apartment.</p>
+										      </div>
+										    </div>
+										  </div> <!-- /panel 4 -->
+										  <div class="panel">
+										    <div class="panel-heading">
+										      <h6 class="panel-title">
+										        <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+										       5. Will you agree with everything I say?</a>
+										      </h6>
+										    </div>
+										    <div id="collapse5" class="panel-collapse collapse">
+										      <div class="panel-body">
+										      	<p>A tale of a fateful trip that started from this tropic port aboard this tiny ship today still wanted by the government they survive as soldiers of fortune to a deluxe you apartment.</p>
+										      </div>
+										    </div>
+										  </div> <!-- /panel 5 -->
+										</div> <!-- end #accordion -->
+									</div> <!-- End of .accordion-one -->
+								</div> <!-- /.faq-content -->
+							</div> <!-- /.col- -->
+							<div class="col-xl-6 col-lg-5 order-first"><div class="img-box"><a data-fancybox href="https://www.youtube.com/embed/r-AuLm7S3XE?rel=0&amshowinfo=0" class="play"><i class="fa fa-play" aria-hidden="true"></i></a></div></div>
+						</div> <!-- /.wrapper -->
+					</div> <!-- /.container -->
+				</div> <!-- /.overlay -->
+			</div> <!-- /.faq-section -->
+
+
+			<!--
+			=====================================================
+				Why Choose us
+			=====================================================
+			-->
+			<div class="why-choose-us section-spacing">
+				<div class="container">
+					<div class="theme-title-one">
+						<h2>Why Choose Us</h2>
+					</div> <!-- /.theme-title-one -->
+
+					<div class="wrapper">
+						<div class="row">
+							<div class="col-lg-4 col-12">
+								<div class="single-block">
+									<i class="icon flaticon-puzzle"></i>
+									<h5><a href="#">Best Strategy</a></h5>
+									<p>The Love Boat soon will be making another run explore strange tools enter new worlds.</p>
+								</div> <!-- /.single-block -->
+							</div> <!-- /.col- -->
+							<div class="col-lg-4 col-12">
+								<div class="single-block">
+									<i class="icon flaticon-presentation"></i>
+									<h5><a href="#">High-Quality Services</a></h5>
+									<p>The Love Boat soon will be making another run explore strange tools enter new worlds.</p>
+								</div> <!-- /.single-block -->
+							</div> <!-- /.col- -->
+							<div class="col-lg-4 col-12">
+								<div class="single-block">
+									<i class="icon flaticon-people"></i>
+									<h5><a href="#">Friendly Support</a></h5>
+									<p>The Love Boat soon will be making another run explore strange tools enter new worlds.</p>
+								</div> <!-- /.single-block -->
+							</div> <!-- /.col- -->
+						</div> <!-- /.row -->
+					</div> <!-- /.wrapper -->
+				</div> <!-- /.container -->
+			</div> <!-- /.why-choose-us -->
+
+
+			<!--
+			=====================================================
+				Short Banner
+			=====================================================
+			-->
+			<div class="short-banner section-spacing">
+				<div class="overlay">
+					<div class="container">
+						<h2>Our business plan consultants have real world experience</h2>
+					</div>
+				</div> <!-- /.overlay -->
+			</div> <!-- /.short-banner -->
+
+
+			<!--
+			=====================================================
+				Latest News
+			=====================================================
+			-->
+			<div class="our-blog latest-news section-spacing">
+				<div class="container">
+					<div class="theme-title-one">
+						<h2>Latest News</h2>
+						<p>A tale of a fateful trip that started from this tropic port aboard this tiny ship today stillers </p>
+					</div> <!-- /.theme-title-one -->
+					<div class="wrapper">
+						<div class="clearfix">
+							<div class="latest-news-slider">
+								<div class="item">
+									<div class="single-blog">
+										<div class="image-box">
+											<img src="images/blog/3.jpg" alt="">
+											<div class="overlay"><a href="#" class="date">Feb 06, 2018</a></div>
+										</div> <!-- /.image-box -->
+										<div class="post-meta">
+											<h5 class="title"><a href="blog-details.html">Trouble with the law since to eastern side of yellow mint</a></h5>
+											<a href="blog-details.html" class="read-more">READ MORE</a>
+										</div> <!-- /.post-meta -->
+									</div> <!-- /.single-blog -->
+								</div> <!-- /.col- -->
+								<div class="item">
+									<div class="single-blog">
+										<div class="image-box">
+											<img src="images/blog/4.jpg" alt="">
+											<div class="overlay"><a href="#" class="date">Mar 30, 2018</a></div>
+										</div> <!-- /.image-box -->
+										<div class="post-meta">
+											<h5 class="title"><a href="blog-details.html">Kind of torture to have to watch the show the one day</a></h5>
+											<a href="blog-details.html" class="read-more">READ MORE</a>
+										</div> <!-- /.post-meta -->
+									</div> <!-- /.single-blog -->
+								</div> <!-- /.col- -->
+								<div class="item">
+									<div class="single-blog">
+										<div class="image-box">
+											<img src="images/blog/5.jpg" alt="">
+											<div class="overlay"><a href="#" class="date">Apr 14, 2018</a></div>
+										</div> <!-- /.image-box -->
+										<div class="post-meta">
+											<h5 class="title"><a href="blog-details.html">Make the best of things its an uphill climb long time</a></h5>
+											<a href="blog-details.html" class="read-more">READ MORE</a>
+										</div> <!-- /.post-meta -->
+									</div> <!-- /.single-blog -->
+								</div> <!-- /.col- -->
+							</div> <!-- /.latest-news-slider -->
+						</div> <!-- /.row -->
+					</div> <!-- /.wrapper -->
+				</div> <!-- /.container -->
+			</div> <!-- /.our-blog -->
+
+
+
+			<!--
+			=====================================================
+				Google Map
+			=====================================================
+			-->
+			<!-- Google Map -->
+			<div class="google-map-one"><div class="map-canvas"></div></div>
+			
+
+			<!--
+			=====================================================
+				Footer
+			=====================================================
+			-->
+			<footer class="theme-footer-two">
+				<div class="top-footer">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-4 col-sm-6 col-12 logo-widget">
+								<div class="logo"><a href="index.html"><img src="images/logo/place.png" alt=""></a></div>
+								<p>Tthis tropic port aboard this tiny ship today still wanted by theam government they survive on up east side to a deluxe as soldiers.</p>
+								<ul class="social-icon">
+									<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+									<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+								</ul>
+							</div> <!-- /.logo-widget -->
+							<div class="col-lg-2 col-sm-6 col-12 footer-list">
+								<h6 class="title">EXPLORE</h6>
+								<ul>
+									<li><a href="about.html">About us</a></li>
+									<li><a href="service.html">Our Solutions</a></li>
+									<li><a href="project.html">Case Studies</a></li>
+									<li><a href="blog.html">Blog</a></li>
+									<li><a href="contact.html">Contact us</a></li>
+								</ul>
+							</div> <!-- /.footer-list -->
+							<div class="col-lg-3 col-sm-6 col-12 footer-gallery">
+								<h6 class="title">Gallery</h6>
+								<div class="wrapper">
+									<div class="row">
+										<div class="col-4">
+											<a href="images/portfolio/7.jpg" data-fancybox="gallery" data-caption="Caption for single image" class="fancybox"><img src="images/portfolio/7.jpg" alt=""></a>
+										</div>
+										<div class="col-4">
+											<a href="images/portfolio/8.jpg" data-fancybox="gallery" data-caption="Caption for single image" class="fancybox"><img src="images/portfolio/8.jpg" alt=""></a>
+										</div>
+										<div class="col-4">
+											<a href="images/portfolio/9.jpg" data-fancybox="gallery" data-caption="Caption for single image" class="fancybox"><img src="images/portfolio/9.jpg" alt=""></a>
+										</div>
+										<div class="col-4">
+											<a href="images/portfolio/10.jpg" data-fancybox="gallery" data-caption="Caption for single image" class="fancybox"><img src="images/portfolio/10.jpg" alt=""></a>
+										</div>
+										<div class="col-4">
+											<a href="images/portfolio/11.jpg" data-fancybox="gallery" data-caption="Caption for single image" class="fancybox"><img src="images/portfolio/11.jpg" alt=""></a>
+										</div>
+										<div class="col-4">
+											<a href="images/portfolio/12.jpg" data-fancybox="gallery" data-caption="Caption for single image" class="fancybox"><img src="images/portfolio/12.jpg" alt=""></a>
+										</div>
+									</div>
+								</div>
+							</div> <!-- /.footer-gallery -->
+							
+							<div class="col-lg-3 col-sm-6 col-12 contact-widget">
+								<h6 class="title">CONTACT</h6>
+								<ul>
+									<li>
+										<i class="flaticon-direction-signs"></i>
+										23A, Queenstown St, Log Vegas, United States.
+									</li>
+									<li>
+										<i class="flaticon-multimedia-1"></i>
+										<a href="#">mailhere@support.com</a>
+									</li>
+									<li>
+										<i class="fa fa-phone" aria-hidden="true"></i>
+										<a href="#">(+2) 345  9808  000</a>
+									</li>
+								</ul>
+							</div> <!-- /.contact-widget -->
+						</div> <!-- /.row -->
+					</div> <!-- /.container -->
+				</div> <!-- /.top-footer -->
+				<div class="bottom-footer">
+					<div class="container">
+						<p>&copy; Copyrights 2019. All Rights Reserved.</p>
+					</div>
+				</div> <!-- /.bottom-footer -->
+			</footer> <!-- /.theme-footer-two -->
+			
+
+	        
+
+	        <!-- Scroll Top Button -->
+			<button class="scroll-top tran3s">
+				<i class="fa fa-angle-up" aria-hidden="true"></i>
+			</button>
+			
+
+
+		<!-- Optional JavaScript _____________________________  -->
+
+    	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    	<!-- jQuery -->
+		<script src="vendor/jquery.2.2.3.min.js"></script>
+		<!-- Popper js -->
+		<script src="vendor/popper.js/popper.min.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+		<!-- Camera Slider -->
+		<script src='vendor/Camera-master/scripts/jquery.mobile.customized.min.js'></script>
+	    <script src='vendor/Camera-master/scripts/jquery.easing.1.3.js'></script> 
+	    <script src='vendor/Camera-master/scripts/camera.min.js'></script>
+	    <!-- menu  -->
+		<script src="vendor/menu/src/js/jquery.slimmenu.js"></script>
+		<!-- WOW js -->
+		<script src="vendor/WOW-master/dist/wow.min.js"></script>
+		<!-- owl.carousel -->
+		<script src="vendor/owl-carousel/owl.carousel.min.js"></script>
+		<!-- js count to -->
+		<script src="vendor/jquery.appear.js"></script>
+		<script src="vendor/jquery.countTo.js"></script>
+		<!-- Fancybox -->
+		<script src="vendor/fancybox/dist/jquery.fancybox.min.js"></script>
+		<!-- Language Stitcher -->
+		<script src="vendor/language-switcher/jquery.polyglot.language.switcher.js"></script>
+		<!-- Google map js -->
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjQLCCbRKFhsr8BY78g2PQ0_bTyrm_YXU"></script>
+		<script src="vendor/sanzzy-map/dist/snazzy-info-window.min.js"></script>
+
+		<!-- Theme js -->
+		<script src="js/theme.js"></script>
+		<script src="js/map-script.js"></script>
+		</div> <!-- /.main-page-wrapper -->
+	</body>
 </html>
